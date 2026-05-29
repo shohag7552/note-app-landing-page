@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/mehedihasanshohag/.pub-cache -name \"*.dart\" -path \"*/jaspr*\" 2>/dev/null | head -30)",
+      "Read(//Users/mehedihasanshohag/.pub-cache/**)"
+    ]
+  }
+}

@@ -5,4 +5,4 @@ library;
 ///
 /// Use any Tailwind color name:
 ///   'emerald'  'violet'  'blue'  'teal'  'rose'  'amber'  'cyan'  'indigo'  'sky'
-const primaryColor = 'emerald';
+const primaryColor = 'amber';

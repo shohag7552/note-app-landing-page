@@ -7,6 +7,7 @@ import 'components/features_section.dart';
 import 'components/video_section.dart';
 import 'components/faq_section.dart';
 import 'components/theme_preview_section.dart';
+import 'components/contact_section.dart';
 import 'components/footer_section.dart';
 
 /// Root component. Owns the global isDark flag and broadcasts it downward.
@@ -35,6 +36,7 @@ class _AppState extends State<App> {
           VideoSection(isDark: _isDark),
           FaqSection(isDark: _isDark),
           ThemePreviewSection(pageIsDark: _isDark),
+          ContactSection(isDark: _isDark),
         ]),
         FooterSection(isDark: _isDark),
       ],

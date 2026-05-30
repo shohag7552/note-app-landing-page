@@ -40,6 +40,16 @@ void main() {
       script(src: 'flutter_bootstrap.js', async: true),
       // Tailwind CSS Play CDN
       script(src: 'https://cdn.tailwindcss.com'),
+      // Smooth anchor scrolling with fixed-nav offset
+      script(
+        content: r'''
+          (function () {
+            var s = document.createElement('style');
+            s.textContent = 'html{scroll-behavior:smooth;scroll-padding-top:80px}';
+            document.head.appendChild(s);
+          })();
+        ''',
+      ),
       // Tailwind config (runs after CDN loads; safelist ensures dynamic classes compile)
       script(
         content: r'''

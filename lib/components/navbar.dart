@@ -70,6 +70,7 @@ class NavBar extends StatelessComponent {
                       ('Features', '#features'),
                       ('Security', '#security'),
                       ('FAQ', '#faq'),
+                      ('Contact', '#contact'),
                     ])
                       li([
                         a(

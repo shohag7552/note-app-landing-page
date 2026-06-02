@@ -5,6 +5,8 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
+import 'package:note_app_landing/pages/privacy_policy_page.dart'
+    as _privacy_policy_page;
 import 'package:note_app_landing/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
@@ -25,6 +27,12 @@ import 'package:note_app_landing/app.dart' as _app;
 /// ```
 ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
-  clients: {_app.App: ClientTarget<_app.App>('app')},
+  clients: {
+    _app.App: ClientTarget<_app.App>('app'),
+    _privacy_policy_page.PrivacyPolicyPage:
+        ClientTarget<_privacy_policy_page.PrivacyPolicyPage>(
+          'privacy_policy_page',
+        ),
+  },
   styles: () => [],
 );

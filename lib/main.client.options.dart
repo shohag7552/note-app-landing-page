@@ -6,6 +6,8 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:note_app_landing/pages/privacy_policy_page.dart'
+    deferred as _privacy_policy_page;
 import 'package:note_app_landing/app.dart' deferred as _app;
 
 /// Default [ClientOptions] for use with your Jaspr project.
@@ -25,5 +27,11 @@ import 'package:note_app_landing/app.dart' deferred as _app;
 /// }
 /// ```
 ClientOptions get defaultClientOptions => ClientOptions(
-  clients: {'app': ClientLoader((p) => _app.App(), loader: _app.loadLibrary)},
+  clients: {
+    'app': ClientLoader((p) => _app.App(), loader: _app.loadLibrary),
+    'privacy_policy_page': ClientLoader(
+      (p) => _privacy_policy_page.PrivacyPolicyPage(),
+      loader: _privacy_policy_page.loadLibrary,
+    ),
+  },
 );

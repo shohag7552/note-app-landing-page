@@ -3,8 +3,10 @@ library;
 
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/server.dart';
+import 'package:jaspr_router/jaspr_router.dart';
 
 import 'app.dart';
+import 'pages/privacy_policy_page.dart';
 import 'main.server.options.dart';
 
 void main() {
@@ -89,6 +91,9 @@ void main() {
         ''',
       ),
     ],
-    body: const App(),
+    body: Router(routes: [
+      Route(path: '/', builder: (context, state) => const App()),
+      Route(path: '/privacy-policy', builder: (context, state) => const PrivacyPolicyPage()),
+    ]),
   ));
 }

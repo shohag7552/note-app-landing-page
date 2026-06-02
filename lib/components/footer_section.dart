@@ -110,7 +110,7 @@ class FooterSection extends StatelessComponent {
                   heading: 'Legal',
                   isDark: isDark,
                   links: [
-                    ('Privacy Policy', '#'),
+                    ('Privacy Policy', '/privacy-policy'),
                     ('Terms of Service', '#'),
                     ('Cookie Policy', '#'),
                     ('GDPR', '#'),
@@ -195,7 +195,7 @@ class FooterSection extends StatelessComponent {
                   classes: 'flex gap-6',
                   [
                     for (final item in [
-                      ('Privacy', '#'),
+                      ('Privacy', '/privacy-policy'),
                       ('Terms', '#'),
                       ('Cookies', '#'),
                     ])
